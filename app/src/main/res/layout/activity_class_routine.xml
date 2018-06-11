@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              tools:context="com.creativeitem.ekattorschoolmanager.ClassRoutineActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:background="@drawable/login_background">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingBottom="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="15dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/back"
+                    android:layout_alignParentLeft="true"/>
+
+            </LinearLayout>
+
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="50dp"
+                android:layout_gravity="center"
+                app:cardElevation="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="12dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/calendar"
+                    android:layout_gravity="center"/>
+
+
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Class Routine"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@color/textColorHint"
+        ></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/student_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="13dp"
+        android:weightSum="4"
+        android:background="#FBB804"
+        android:layout_gravity="center">
+
+        <!--<Spinner-->
+            <!--android:layout_weight="1"-->
+            <!--android:id="@+id/class_list_spinner"-->
+            <!--android:spinnerMode="dialog"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content">-->
+
+        <!--</Spinner>-->
+
+        <LinearLayout
+            android:id="@+id/class_list_custom_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:background="@drawable/round_corner_white_background"
+            android:paddingLeft="10dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp">
+
+            <TextView
+                android:id="@+id/Class"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Class"
+                android:textSize="15sp"
+                android:textColor="@color/appColor2"
+                android:layout_gravity="center"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/drop_down_app_color"
+                android:layout_gravity="center"
+                android:paddingLeft="6dp"
+                android:paddingTop="2dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/section_custom_list_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:background="@drawable/round_corner_white_background"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp">
+
+            <TextView
+                android:id="@+id/section"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Section"
+                android:textSize="15sp"
+                android:textColor="@color/appColor2"
+                android:layout_gravity="center"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/drop_down_app_color"
+                android:layout_gravity="center"
+                android:paddingLeft="6dp"
+                android:paddingTop="2dp"/>
+        </LinearLayout>
+
+        <!--<Spinner-->
+            <!--android:layout_weight="1"-->
+            <!--android:id="@+id/section_list_spinner"-->
+            <!--android:spinnerMode="dialog"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_toRightOf="@+id/class_list_spinner"></Spinner>-->
+
+        <!--<Spinner-->
+            <!--android:layout_weight="1"-->
+            <!--android:id="@+id/day_list_spinner"-->
+            <!--android:spinnerMode="dialog"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_toRightOf="@+id/section_list_spinner"></Spinner>-->
+
+
+
+        <LinearLayout
+            android:id="@+id/days_custom_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:background="@drawable/round_corner_white_background"
+            android:paddingLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp">
+
+            <TextView
+                android:id="@+id/day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Day"
+                android:textSize="15sp"
+                android:textColor="@color/appColor2"
+                android:layout_gravity="center"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/drop_down_app_color"
+                android:layout_gravity="center"
+                android:paddingLeft="6dp"
+                android:paddingTop="2dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/view_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  View  "
+            android:padding="3dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@drawable/round_corner_white_background"
+            android:onClick="viewButtonAction"
+            android:textSize="15sp"
+            android:textColor="@color/appColor2"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="#fff"></LinearLayout>
+
+    <ListView
+        android:id="@+id/classRoutine_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/class_routine_picker_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="#FAFAFA"
+        android:divider="@null"
+        android:dividerHeight="0dp"/>
+
+</LinearLayout>

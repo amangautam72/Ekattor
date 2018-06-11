@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.creativeitem.ekattorschoolmanager.MyProfileActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"
+        android:background="@drawable/login_background">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/my_profile_imageView"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/desc"
+            android:scaleType="fitXY"/>
+
+        <!--<Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/updateImage"
+            android:textSize="13sp"
+            android:textColor="#ffffff"
+            android:textAllCaps="false"
+            android:id="@+id/update_image_button"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/my_profile_imageView"
+            android:background="@android:color/transparent"
+            android:onClick="updateImageButtonAction"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/updateImageDone"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:textAllCaps="false"
+            android:id="@+id/updateImage_done_button"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/update_image_button"
+            android:background="@android:color/transparent"
+            android:layout_toRightOf="@id/update_image_button"
+            android:layout_toEndOf="@id/update_image_button"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:visibility="invisible"
+            android:onClick="updateImageDoneAction"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/updateImageCancel"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:textAllCaps="false"
+            android:id="@+id/updateImage_cancel_button"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/update_image_button"
+            android:background="@android:color/transparent"
+            android:layout_toLeftOf="@id/update_image_button"
+            android:layout_toStartOf="@id/update_image_button"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp"
+            android:visibility="invisible"
+            android:onClick="updateImageCancelAction"/>-->
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.75"
+        android:background="#FAFAFA">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentTop="true"
+            android:background="#D5DADE"
+            android:id="@+id/profile_segment_control_holder_layout">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@android:color/transparent">
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/manageProfile"
+                    android:textColor="#ffffff"
+                    android:textAllCaps="false"
+                    style="@android:style/ButtonBar"
+                    android:background="@color/appColor"
+                    android:id="@+id/manage_profile_button"
+                    android:onClick="manageProfileButtonAction"
+                    android:textSize="14sp"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/changePassword"
+                    android:textColor="#45BBF7"
+                    android:textAllCaps="false"
+                    style="@android:style/ButtonBar"
+                    android:background="#fff"
+                    android:id="@+id/change_password_button"
+                    android:onClick="changePasswordButtonAction"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_segment_control_holder_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/manage_profile_layout"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/name"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:id="@+id/name_textView"
+                    android:layout_margin="20dp"
+                    android:layout_gravity="center_vertical"/>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/name_editText"
+                    android:background="#DCDCDC"
+                    android:textColor="#000000"
+                    android:layout_margin="10dp"
+                    android:padding="7dp"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email "
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:id="@+id/email_textView"
+                    android:layout_margin="20dp"
+                    android:layout_gravity="center_vertical"/>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:inputType="textEmailAddress"
+                    android:ems="10"
+                    android:id="@+id/email_editText"
+                    android:background="#DCDCDC"
+                    android:textColor="#000000"
+                    android:layout_margin="10dp"
+                    android:padding="7dp"/>
+
+            </LinearLayout>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/update"
+                android:textSize="18sp"
+                android:textColor="#fff"
+                android:id="@+id/profile_update_button"
+                android:layout_marginTop="60dp"
+                android:background="@color/appColor"
+                android:onClick="profileUpdateButtonAction"
+                android:layout_gravity="center_horizontal"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"/>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_segment_control_holder_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/change_password_layout"
+            android:visibility="invisible">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="@string/currentPassword"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:id="@+id/current_password_textView"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/current_password_editText"
+                android:layout_alignBottom="@+id/current_password_textView"
+                android:layout_toRightOf="@+id/current_password_textView"
+                android:layout_toEndOf="@id/current_password_textView"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:background="#DCDCDC"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:textColor="#000000"
+                android:padding="7dp"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="@string/newPassword"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:id="@+id/new_password_textView"
+                android:layout_below="@+id/current_password_textView"
+                android:layout_toLeftOf="@+id/current_password_textView"
+                android:layout_toStartOf="@+id/current_password_editText"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/new_password_editText"
+                android:layout_alignTop="@+id/new_password_textView"
+                android:layout_alignLeft="@+id/current_password_editText"
+                android:layout_alignStart="@+id/current_password_editText"
+                android:layout_alignRight="@+id/current_password_editText"
+                android:layout_alignEnd="@+id/current_password_editText"
+                android:background="#DCDCDC"
+                android:textColor="#000000"
+                android:padding="7dp"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="@string/confirmNewPassword"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:id="@+id/confirm_new_password_textView"
+                android:layout_below="@+id/new_password_textView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/confirm_new_password_editText"
+                android:layout_alignTop="@+id/confirm_new_password_textView"
+                android:layout_alignLeft="@+id/new_password_editText"
+                android:layout_alignStart="@+id/new_password_editText"
+                android:layout_alignRight="@+id/new_password_editText"
+                android:layout_alignEnd="@+id/new_password_editText"
+                android:background="#DCDCDC"
+                android:textColor="#000000"
+                android:padding="7dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/update"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:id="@+id/update_password_button"
+                android:layout_below="@+id/confirm_new_password_textView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:background="@color/appColor"
+                android:onClick="passwordUpdateButtonAction"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              tools:context="com.creativeitem.ekattorschoolmanager.ExamMarksActivity">
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="0.2"-->
+        <!--android:background="#218df2">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/examMarks"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:textSize="20sp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_centerHorizontal="true" />-->
+    <!--</RelativeLayout>-->
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="0.8">-->
+
+        <!--<LinearLayout-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:background="#73767A"-->
+            <!--android:id="@+id/exam_marks_picker_layout">-->
+            <!--<Spinner-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight=".25"-->
+                <!--android:id="@+id/exam_list_spinner"-->
+                <!--android:spinnerMode="dialog"-->
+                <!--android:layout_marginLeft="8dp"-->
+                <!--android:layout_marginStart="8dp">-->
+            <!--</Spinner>-->
+            <!--<Spinner-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight=".25"-->
+                <!--android:id="@+id/class_list_spinner"-->
+                <!--android:spinnerMode="dialog">-->
+            <!--</Spinner>-->
+            <!--<Spinner-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight=".25"-->
+                <!--android:id="@+id/subject_list_spinner"-->
+                <!--android:spinnerMode="dialog">-->
+            <!--</Spinner>-->
+            <!--<RelativeLayout-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight=".25">-->
+
+                <!--<Button-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="35dp"-->
+                    <!--android:text="@string/view"-->
+                    <!--android:textSize="14sp"-->
+                    <!--android:id="@+id/view_button"-->
+                    <!--android:background="#2D95B8"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_marginLeft="8dp"-->
+                    <!--android:layout_marginStart="8dp"-->
+                    <!--android:layout_marginRight="8dp"-->
+                    <!--android:layout_marginEnd="8dp"-->
+                    <!--android:textAllCaps="false"-->
+                    <!--android:onClick="viewButtonAction"/>-->
+            <!--</RelativeLayout>-->
+
+        <!--</LinearLayout>-->
+
+        <!--<ListView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/exam_marks_listView"-->
+            <!--android:layout_below="@+id/exam_marks_picker_layout"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:background="#FAFAFA"-->
+            <!--android:dividerHeight="1dp"-->
+            <!--android:divider="@android:color/darker_gray"/>-->
+    <!--</RelativeLayout>-->
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:background="@drawable/login_background">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingBottom="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="15dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/back"
+                    android:layout_alignParentLeft="true"/>
+
+            </LinearLayout>
+
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="50dp"
+                android:layout_gravity="center"
+                app:cardElevation="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="12dp">
+
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_003_checklist"
+                    android:layout_gravity="center"/>
+
+
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exam Marks"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@color/textColorHint"
+        ></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="13dp"
+        android:background="#FBB804"
+        android:weightSum="4">
+
+        <!--<Spinner-->
+            <!--android:id="@+id/exam_list_spinner"-->
+            <!--android:spinnerMode="dialog"-->
+            <!--android:layout_width="90dp"-->
+            <!--android:layout_height="wrap_content">-->
+
+        <!--</Spinner>-->
+
+        <LinearLayout
+            android:id="@+id/exam_list_custom_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:background="@drawable/round_corner_white_background"
+            android:paddingLeft="7dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/exams"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exams"
+                android:textSize="15sp"
+                android:textColor="@color/appColor2"
+                android:layout_gravity="center"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/drop_down_app_color"
+                android:layout_gravity="center"
+                android:paddingLeft="6dp"
+                android:paddingTop="2dp"/>
+        </LinearLayout>
+
+
+        <!--<Spinner-->
+            <!--android:id="@+id/class_list_spinner"-->
+            <!--android:spinnerMode="dialog"-->
+            <!--android:layout_width="90dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_toRightOf="@+id/exam_list_spinner"></Spinner>-->
+
+        <LinearLayout
+            android:id="@+id/class_list_custom_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/round_corner_white_background"
+            android:paddingLeft="7dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/Class"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Class"
+                android:textSize="15sp"
+                android:textColor="@color/appColor2"
+                android:layout_gravity="center"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/drop_down_app_color"
+                android:layout_gravity="center"
+                android:paddingLeft="6dp"
+                android:paddingTop="2dp"/>
+        </LinearLayout>
+
+        <!--<Spinner-->
+            <!--android:id="@+id/subject_list_spinner"-->
+            <!--android:spinnerMode="dialog"-->
+            <!--android:layout_width="90dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_toRightOf="@+id/class_list_spinner"></Spinner>-->
+
+
+        <LinearLayout
+            android:id="@+id/subject_list_custom_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/round_corner_white_background"
+            android:paddingLeft="7dp"
+            android:layout_marginRight="10dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/subject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subjects"
+                android:textSize="15sp"
+                android:textColor="@color/appColor2"
+                android:layout_gravity="center"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/drop_down_app_color"
+                android:layout_gravity="center"
+                android:paddingLeft="6dp"
+                android:paddingTop="2dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/section_custom_list_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/round_corner_white_background"
+            android:paddingLeft="7dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/section"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Section"
+                android:textSize="15sp"
+                android:textColor="@color/appColor2"
+                android:layout_gravity="center"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/drop_down_app_color"
+                android:layout_gravity="center"
+                android:paddingLeft="6dp"
+                android:paddingTop="2dp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/textColorHint"
+        ></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/view_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  View  "
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@drawable/round_corner_app_color_background"
+            android:onClick="viewButtonAction"
+            android:textSize="17sp"
+            android:textColor="#fff"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/exam_marks_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/class_routine_picker_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="#FAFAFA"
+        android:divider="@null"/>
+
+</LinearLayout>
